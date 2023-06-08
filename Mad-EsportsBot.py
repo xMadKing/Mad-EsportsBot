@@ -14,7 +14,7 @@ standings = leagues_api.get_standings(hl="en-US", tournament_id=[107417059262120
 schedule = events_api.get_schedule(hl="en-US", league_id=[98767991302996019])
 tony = leagues_api.get_tournaments_for_league(hl="en-US", league_id=98767991299243165)
 
-activity: discord.Activity = discord.Game(name='Penis gang')
+activity: discord.Activity = discord.Game(name='Somthing™')
 status: discord.Status = discord.Status.idle
 bot = commands.Bot(command_prefix='$', description="test bot", intents=discord.Intents.default(), activity=activity,
                    status=status)
@@ -39,7 +39,7 @@ async def livebroadcasts(ctx: commands.Context):
     embed_msg = discord.Embed(title="LIVE  🔴", description="Current live broadcasts, see "
                                              + "https://lolesports.com/schedule to watch!")
     embed_msg.set_thumbnail(url='https://logos-world.net/wp-content/uploads/2021/09/LoL-Esports-New-Logo-700x394.png')
-    embed_msg.set_footer(text="Powered by Penis Gang™",
+    embed_msg.set_footer(text="Powered by Somthing™"",
                          icon_url="https://i.pinimg.com/originals/ed/f0/53/edf053732edf63388f3af24d4da2e547.jpg")
     for league in live_leagues:
         embed_msg.add_field(name=league, value="More information about the " + league + ": https://lol.fandom.com/wiki/"
@@ -59,7 +59,7 @@ async def LECstandings(ctx: commands.Context):
         teams_str = teams_str[:-2]
         embed_msg.add_field(name=standing['ordinal'],  value=teams_str, inline=False)
     embed_msg.set_thumbnail(url='http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png')
-    embed_msg.set_footer(text="Powered by Penis Gang™",
+    embed_msg.set_footer(text="Powered by Somthing™",
                          icon_url="https://i.pinimg.com/originals/ed/f0/53/edf053732edf63388f3af24d4da2e547.jpg")
     await ctx.send(embed=embed_msg)
 
@@ -76,7 +76,7 @@ async def LCKstandings(ctx: commands.Context):
         teams_str = teams_str[:-2]
         embed_msg.add_field(name=standing['ordinal'],  value=teams_str, inline=False)
     embed_msg.set_thumbnail(url='http://static.lolesports.com/leagues/lck-color-on-black.png')
-    embed_msg.set_footer(text="Powered by Penis Gang™",
+    embed_msg.set_footer(text="Powered by Somthing™",
                          icon_url="https://i.pinimg.com/originals/ed/f0/53/edf053732edf63388f3af24d4da2e547.jpg")
     await ctx.send(embed=embed_msg)
 
@@ -93,7 +93,7 @@ async def LPLstandings(ctx: commands.Context):
         teams_str = teams_str[:-2]
         embed_msg.add_field(name=standing['ordinal'],  value=teams_str, inline=False)
     embed_msg.set_thumbnail(url='http://static.lolesports.com/leagues/1592516115322_LPL-01-FullonDark.png')
-    embed_msg.set_footer(text="Powered by Penis Gang™",
+    embed_msg.set_footer(text="Powered by Somthing™",
                          icon_url="https://i.pinimg.com/originals/ed/f0/53/edf053732edf63388f3af24d4da2e547.jpg")
     await ctx.send(embed=embed_msg)
 
@@ -110,8 +110,8 @@ async def LCSstandings(ctx: commands.Context):
         teams_str = teams_str[:-2]
         embed_msg.add_field(name=standing['ordinal'],  value=teams_str, inline=False)
     embed_msg.set_thumbnail(url='http://static.lolesports.com/leagues/LCSNew-01-FullonDark.png')
-    embed_msg.set_footer(text="Powered by Penis Gang™",
+    embed_msg.set_footer(text="Powered by Somthing™",
                          icon_url="https://i.pinimg.com/originals/ed/f0/53/edf053732edf63388f3af24d4da2e547.jpg")
     await ctx.send(embed=embed_msg)
 
-bot.run('NjgxNDk0MDg1Mjg2MTAxMDA1.XlPQ0w.CrKA1b3muPpoNEgx4Pd468HdRD4')
+bot.run('token')
